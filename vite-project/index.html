@@ -11,24 +11,5 @@
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        window.MY_APP &&
-        window.MY_APP.init({
-          selector: "#root",
-          options: {
-            initializedOptions: ["A", "B", "C", "D"],
-            onPositionChange: (positions) => {
-              console.log(positions);
-            },
-            onComplete: (positions) => {
-            },
-            onInit: () => {
-
-            }
-          }
-        });
-      });
-    </script>
   </body>
 </html>

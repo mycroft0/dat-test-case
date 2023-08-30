@@ -60,9 +60,6 @@ const CarScheme: React.FC<CarSchemeProps> = ({options}) => {
 
     console.log(activePoints)
 
-    const eventHandler = (e) => {
-        console.log(e)
-    }
 
     return (
         <div>

@@ -17,8 +17,6 @@ window.MY_APP = {
     }
 };
 
-console.log("plugin.js");
-
 document.addEventListener("DOMContentLoaded", () => {
     window.MY_APP &&
     window.MY_APP.init({
@@ -26,8 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
         options: {
             initializedOptions: [A, B, C, D], // массив активных позиций
             onPositionChange(positions) {
-                // вызывается на изменнеие позиций и возвращает массив активных позиций
-                console.log(postions);
             },
             onComplete(positions) {}, // вызывается при подтверждении событий
             onInit() {} // Вызывается на инициализацию плагина
